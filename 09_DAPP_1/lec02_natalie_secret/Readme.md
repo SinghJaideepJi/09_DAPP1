@@ -3,7 +3,7 @@
 #### Developed by:-  
 - Jaideep Singh 
 
-![](https://github.com/SinghJaideepJi/lec02_natalie_secret/blob/master/lec02_natalie_secret/Output.JPG)
+![](https://github.com/SinghJaideepJi/09_DAPP1/blob/master/09_DAPP_1/lec02_natalie_secret/Output.jpg)
 
 ### Secret Management :-
 The secrets were mentioned in .env file as follows - 
