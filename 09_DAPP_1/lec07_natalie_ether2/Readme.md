@@ -1,4 +1,4 @@
-## Hands on Ethersjs Assignment
+## Hands on Ethersjs and Express Assignment
 
 #### Developed by:-  
 - Jaideep Singh 
@@ -9,3 +9,4 @@
 - etherjs used to deploy contract
 - called functions on contract
 - Implemented event listener
+- 3 endpoints excercised - enroll , cancelEnrollment , getEnrollmentName

@@ -40,15 +40,37 @@ async function getEnrollmentName()
     return(name)
 }
 
-
 server.get('/getEnrollmentName', async (request, response) => {
     let value = await getEnrollmentName();
     response.send(value);
   });
+
+contractWithSigner.on("Enrolled", (name) => {
+    console.log(name + " enroled with us !!!");
+});
+
+async function enroll(name)
+{
+    await contractWithSigner.enroll(name)
+    console.log("Enrolled")
+}
+
+server.get('/enroll', async (request, response) => {
+    await enroll(request.body.name);
+    response.send();
+  });
+
+async function cancelEnrollment()
+{
+    contractWithSigner.cancelEnrollment()
+    console.log("Enrollment Cancelled")
+}
+
+server.get('/cancelEnrollment', async (request, response) => {
+    await cancelEnrollment();
+    response.send();
+  });
+
 server.listen(process.env.PORT,()=>{
     console.log("The server is running at",process.env.PORT)
-})
-
-contractWithSigner.on(“Enrolled”, (name) => {
-    console.log(name + " enroled with us !!!");
 });
