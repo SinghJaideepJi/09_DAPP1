@@ -13,8 +13,8 @@
   },
   "gitHead": "21f5367bebe10594ffcc26f3aa4b574b1226472a",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "ethers": "^4.0.31",
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   }
 }
